@@ -1,0 +1,83 @@
+{% extends 'home.html' %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<title>About-Us</title>
+<body>
+<div>
+<div>
+    <!--<img src="https://blog.hubspot.com/hubfs/contactus_33.webp" style="height: 80%;
+    opacity: 0.5;min-width: 99%;object-fit: cover;position: absolute;top: 0;">-->
+    <article style="margin: 3%;font-size: xxx-large;color: #000080;"><b>CONTACT US</b></article>
+
+    <p style="margin: 3%;font-size: xx-large;margin-top: -4vw;margin-left: 45px;">We like to hear from you</p>
+
+    <article style="font-size: xxx-large;color: #000080;margin-left: 750px;margin-top: -11vw;"><b>Get In Touch With Us</b></article>
+
+</div>
+
+<div class="row">
+    <p style="font-size: x-large;color: #646767d6;margin-bottom: 3vw;margin-top: 6vw;"><b style="margin-left: 50px; ">PIMPLE SAUDAGAR BRANCH</b></p>
+  <div class="column" style="background-color:#ffffff69;">
+  <img src="{% static 'images/Call.png' %}" style="width: 48px;margin-left: 3vw;margin-bottom: -2px;margin-top:-3px;">
+      <p style="color: #ec9a04;font-size: 2vw;margin-left: 4vw;margin-top:10px"><b><u>Telephone</u></b></p>
+      <a href="tel:8308103366" style="margin-left: 4vw;font-family: sans-serif;">+91 83081 03366 /</a><br>
+      <a href="tel:9623868215" style="margin-left: 4vw;font-family: sans-serif;">+91 96238 68215 /</a><br>
+      <a href="tel:9552563869" style="margin-left: 4vw;font-family: sans-serif;">+91 95525 63869 /</a><br>
+  </div>
+  <div class="column" style="background-color:#ffffff69;">
+    <img src="{% static 'images/locat.png' %}" style="width: 2vw;margin-left: 3vw;margin-bottom: -10px;">
+      <p style="color: #ec9a04;font-size: 2vw;margin-left: 1vw;margin-top: 20px;"><b><u>Address</u></b></p>
+      <p style="font-family: sans-serif;">3RI Technologies Pvt Ltd.<br>405 - 4th Floor, Rainbow Plaza,<br> Pimple Saudagar, Pune - 411017</p>
+  </div>
+</div>
+</div>
+<div>
+
+<form method="post" class="label input" style="display:flex;flex-direction: column;width: 45%;height: 20vw;margin-left: 50vw;margin-top: -31vw;margin-bottom: 10vw;">
+{% csrf_token %}
+{{feed}}
+
+<br>
+<input type="submit" style="color: #060606;background-color: #ff5c00;border: #f6eeee00;height: 46px;border-radius: 6px;">
+
+</form>
+
+</div>
+
+<div class="row">
+    <p style="font-size: x-large;color: #646767d6;margin-bottom: 3vw;margin-top: -2vw;"><b style="margin-left: 50px; ">DECCAN BRANCH</b></p>
+  <div class="column" style="background-color:#ffffff69;">
+  <img src="{% static 'images/Call.png' %}" style="width: 48px;margin-left: 3vw;margin-bottom: -2px;margin-top:-3px;">
+      <p style="color: #ec9a04;font-size: 2vw;margin-left: 4vw;margin-top:10px"><b><u>Telephone</u></b></p>
+      <a href="tel:8308103366" style="margin-left: 4vw;font-family: sans-serif;">+91 83081 03366 /</a><br>
+      <a href="tel:7410073340" style="margin-left: 4vw;font-family: sans-serif;">+91 74100 73340 /</a><br>
+      <a href="tel:9552563869" style="margin-left: 4vw;font-family: sans-serif;">+91 95525 63869 /</a><br>
+  </div>
+  <div class="column" style="background-color:#ffffff69;">
+    <img src="{% static 'images/locat.png' %}" style="width: 2vw;margin-left: 3vw;margin-bottom: -10px;">
+      <p style="color: #ec9a04;font-size: 2vw;margin-left: 1vw;margin-top: 20px;"><b><u>Address</u></b></p>
+      <p style="font-family: sans-serif;">3RI Technologies - Deccan<br>301 - 3rd Floor,"DurgaShankar",<br>Opp. Sambhaji Park, Deccan,<br>Pune - 411004</p>
+  </div>
+</div>
+
+<div class="row">
+    <p style="font-size: x-large;color: #646767d6;margin-bottom: 3vw;margin-top: -377px;"><b style="margin-left: 50vw; ">NAL STOP BRANCH</b></p>
+  <div class="column" style="background-color:#ffffff69;margin-left: 47vw;margin-top: -19rem;">
+  <img src="{% static 'images/Call.png' %}" style="width: 48px;margin-left: 3vw;margin-bottom: -2px;margin-top:-3px;">
+      <p style="color: #ec9a04;font-size: 2vw;margin-left: 4vw;margin-top:10px"><b><u>Telephone</u></b></p>
+      <a href="tel:8308103366" style="margin-left: 4vw;font-family: sans-serif;">+91 83081 03366 / </a><br>
+      <a href="tel:8669653366" style="margin-left: 4vw;font-family: sans-serif;">+91 86696 53366 /</a><br>
+      <a href="tel:9552563869" style="margin-left: 4vw;font-family: sans-serif;">+91 95525 63869 / </a><br>
+  </div>
+  <div class="column" style="background-color:#ffffff69;margin-top: -19rem;">
+    <img src="{% static 'images/locat.png' %}" style="width: 2vw;margin-left: 3vw;margin-bottom: -10px;">
+      <p style="color: #ec9a04;font-size: 2vw;margin-left: 1vw;margin-top: 20px;"><b><u>Address</u></b></p>
+      <p style="font-family: sans-serif;">3RI Technologies - Nal Stop<br>4th Floor, Mantri Vertex,<br>Above Kaya Clinic, Law College Rd, Pune - 411004</p>
+  </div>
+</div>
+</body>
+
+
+
+{% endblock %}

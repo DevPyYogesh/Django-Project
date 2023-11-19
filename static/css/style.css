@@ -1,0 +1,57 @@
+.nb {
+  --c:linear-gradient(#a29f9ef0 0 0);
+
+  padding-bottom: .15em;
+  margin-bottom: 15px;
+  background: var(--c), var(--c);
+  background-size: .3em .1em;
+  background-position:50% 100%;
+  background-repeat: no-repeat;
+  transition: .3s linear, background-size .3s .2s linear;
+  color:#fe8f06;
+}
+.nb:hover {
+  background-size: 40% .1em;
+  background-position: 10% 100%, 90% 100%;
+}
+
+
+
+
+/**/
+[class] {
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  max-width: 25%;
+  height: 300px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+img{
+object-fit:contain;
+}
+
+.label{
+font-size: 17px;
+color: #525454f2;
+}
+
+input{
+padding:10px;
+}
+
+.table{
+margin-top:250px;
+}
+
